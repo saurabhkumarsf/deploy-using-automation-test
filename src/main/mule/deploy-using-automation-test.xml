@@ -124,7 +124,7 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\test:deploy-using-automation-test-config">
-        <ee:transform doc:name="Transform Message">
+        <ee:transform doc:name="Set Payload">
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0
 output application/json
